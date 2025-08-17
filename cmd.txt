@@ -1,0 +1,41 @@
+# for command prompt
+\s means search subdirectories of folders
+\i means case insensitive search (for text)
+\m means print details only if there is a match (for finding text)
+
+##########################################################################
+
+# search for text within files in a folder (look for any occurrences of the word "file" and print any matching results)
+cd desktop
+findstr /i /m /c:"file"
+
+# search for text within python files in a folder
+cd desktop
+findstr /i /m /c:"file" *.py
+
+# output results to file not the command prompt for python and txt files
+cd desktop 
+findstr /i /m /c:"file" *.py *.txt > C:\file.txt
+
+##########################################################################
+
+# list all files in a folder and give details about the files
+cd desktop 
+dir /s /A-D /o:gn
+
+
+# save outputs to a .txt file
+dir /s /A-D /o:gn > file.txt
+
+# or only show filename (not e.g. size or last save date)
+dir /s /b /A-D /o:gn > file.txt
+
+##########################################################################
+
+# view files in tree diagram and save to file
+cd desktop
+tree/f > file.txt
+
+## for writing file > means create/overwite and >> means append
+e.g. tree/f > file.txt # overwrites each time
+e.g. tree/f >> file.txt # appends results to bottom of file
