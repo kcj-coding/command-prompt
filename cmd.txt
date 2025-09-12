@@ -13,6 +13,10 @@ findstr /i /m /c:"file"
 cd desktop
 findstr /i /m /c:"file" *.py
 
+# search for text within file name like abc in a folder
+cd desktop
+findstr /i /m /c:"file" *abc*
+
 # output results to file not the command prompt for python and txt files
 cd desktop 
 findstr /i /m /c:"file" *.py *.txt > C:\file.txt
