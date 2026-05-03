@@ -11,4 +11,5 @@ rem search for text in folder
 
 rem output results to file not the command prompt for python and txt files
 cd %userInput%
-findstr /i /m /c:%textInput% *.py *.txt > C:\file_ui.txt
+findstr /i /m /c:%textInput% *.py *.txt > C:\file_ui.txt rem writes to C:
+rem findstr /i /m /c:%textInput% *.py *.txt > .file_ui.txt rem writes to current folder cmd running in (%userInput%)
