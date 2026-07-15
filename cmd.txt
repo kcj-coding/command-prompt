@@ -43,3 +43,9 @@ tree/f > file.txt
 ## for writing file > means create/overwite and >> means append
 e.g. tree/f > file.txt # overwrites each time
 e.g. tree/f >> file.txt # appends results to bottom of file
+
+##########################################################################
+
+# windows 11 local account install
+# Open Command Prompt: At the network connection screen, press Shift + F10.
+# Run Bypass Command: Type OOBE\BYPASSNRO (exact command, no spaces) and press Enter.
